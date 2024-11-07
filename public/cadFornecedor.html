@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br" id="fornecedor">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="style.css" rel="stylesheet">
+    <link href="cadastro.js">
+    <!--titulo que aparece na aba-->
+    <title>Cadastro Kolekcja | Fornecedor</title>
+</head>
+<!-- inicio do corpo do site, é aqui onde aparece as informaçoes-->
+<body class="cp">
+
+    <header class="oio">
+        <img id="ic" src="imagens/logo branca2.png" alt="">
+ 
+        <a href="index.html"> <h2 class="pp">Voltar a tela inicial</h2></a>
+        <a href="cadastro_produto.html"> <h2 class="pp"> Cadastro de produtos </h2></a>
+        <a href="cadastro_cliente.html"> <h2 class="pp"> Cadastro de clientes </h2> </a>
+        <a href="cadastro_venda.html"> <h2 class="pp"> Cadastro de vendas</h2></a>
+    </header>
+
+        <!--link pra chama o js-->
+        <script src="cadastro.js"></script>
+
+        <!--dix para organizar o site>-->
+        <div class="postarproduto">
+            <div class="MARMITA">
+                <!--h1 contendo um titulo para contextualizar-->
+                <h1 class="tituloproduto">Cadastro de fornecedor na Kolekcja</h1>
+
+                <!-- div' onde tem label e input para por as informaçoes necessarias de casdastro-->
+                <div>
+                    <label for="nome">Nome da Empresa:</label>
+                    <input id="nome" type="text" name="name" > <br><br>
+                </div> 
+                <!--cada div tem id para usar no css, tipo para oq será digitado e placeholder para saber oque se deve escrever-->
+                <div>
+                    <label for="cnpj">CNPJ:</label>
+                    <input id="cnpj" type="text" name="cpf_usuario" placeholder="xxx.xxx.xxx-xx"> <br><br>
+                </div> 
+                <!-- div' onde tem label e input para por as informaçoes necessarias de casdastro-->
+                 <!--cada div tem id para usar no css, tipo para oq será digitado e placeholder para saber oque se deve escrever-->
+                <div>
+                    <label for="TEL">Telefone</label>
+                    <input id="TEL" type="tel" name="numero_tel" placeholder="(xx) xxxx-xxxx"> <br><br>
+                </div> 
+
+                 <!-- div' onde tem label e input para por as informaçoes necessarias de casdastro-->
+                <!--cada div tem id para usar no css, tipo para oq será digitado e placeholder para saber oque se deve escrever-->
+                <div>
+                    <label for="email_empresa">Email fornecedor:</label>
+                    <input id="email_empresa" type="email" name="email" > <br><br>
+                </div>
+
+                 <!-- div' onde tem label e input para por as informaçoes necessarias de casdastro-->
+                <!--cada div tem id para usar no css, tipo para oq será digitado e placeholder para saber oque se deve escrever-->
+                <div>
+                    <label for="NOME2">Razão Social:</label>
+                    <input id="NOME2" type="text" name="nome_usuario2"> <br><br>
+                </div>
+
+                <!--fim das div para cadastro-->
+                <!--botao para confirmar a craçao do cadastro-->
+                <button onclick="cadastro_fornecedor()" >Criar Cadastro</button>
+
+            </div>
+           
+          
+            <!--fim da -->
+
+            <script src="cadastro.js"> </script>
+    <footer> 
+    </footer>
+</body>
+ </html>

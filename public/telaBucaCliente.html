@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="style.css" rel="stylesheet">
+    <!--titulo que aparece na aba-->
+    <title>Busca | Cliente</title>
+</head>
+<!-- inicio do corpo do site, é aqui onde aparece as informaçoes-->
+<body id="cp">
+
+    <header id="oio">
+        <img id="ic" src="imagens/logo branca.png" alt="">
+ 
+        <a href="interfaceBACK.html"> <h2 class="pp">Voltar a tela inicial</h2></a>
+        <a href="cadastro_produto.html"> <h2 class="pp"> Buca de Produtos </h2></a>
+        <a href="cadFornecedor.html"> <h2 class="pp"> Busca de fornecedor </h2> </a>
+    </header>
+    <main class="main1">
+        <div class="box_form">
+            <h1 class="tituloproduto">Busca de Cliente</h1>
+            <form class="formulario">
+                <label for="nomeCliente">Nome do Cliente:</label>
+                <input type="text" name="nomeCliente" id="nome_cliente"> <br><br>
+
+                <label for="cpfCliente">CPF do Cliente:</label>
+                <input type="text" name="cpfCliente" id="cpf_cliente"> <br><br>
+
+                <label for="emailCliente">E-Mail do Cliente:</label>
+                <input type="text" name="emailCliente" id="email_cliente"> <br><br>
+
+                <label for="telefCliente">Telefone do Cliente:</label>
+                <input type="number" name="telefCliente" id="telef_cliente"> <br><br>
+
+                <button type="button" onclick="consultarClientes()">Cadastrar Cliente</button> <br><br><br>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+    <script src="cadastro.js"> </script>
+        
+    </footer>
+</body>
+</html>

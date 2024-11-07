@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Cadastro Kolekcja | Venda</title>
+</head>
+<body id="cp">
+    <header id="oio">
+        <img id="ic" src="imagens/logo branca2.png" alt="">
+
+        <a href="index.html"> <h2 class="pp">Voltar à tela inicial</h2></a>
+        <a href="cadastro_produto.html"> <h2 class="pp"> Cadastro de produtos </h2></a>
+        <a href="cadFornecedor.html"> <h2 class="pp"> Cadastro de fornecedor </h2> </a>
+    </header>
+    <main>
+        <div class="box_form">
+            <h1 class="tituloproduto">Cadastro da Venda</h1>
+            <form class="formulario">
+                <label for="cpf_c">CPF cliente:</label>
+                <input type="text" name="cpf_c" id="cpf_c"> <br><br>
+                <label for="codigo_produto">Código do produto:</label>
+                <input type="text" name="codigo_produto" id="codigo_produto"> <br></br>
+                
+                <label for="dataVenda">Data da Venda:</label>
+                <input type="text" name="dataVenda" id="data_venda"> <br><br>
+
+                <label for="dataEnvio">Data de Envio:</label>
+                <input type="text" name="dataEnvio" id="data_envio"> <br><br>
+
+                <label for="estimEntrega">Estimativa da Entrega:</label>
+                <input type="number" name="estimEntrega" id="estim_entrega"> <br><br>
+
+                <label for="custoEntrega">Custo da Entrega:</label>
+                <input type="text" name="custoEntrega" id="custo_entrega"> <br><br>
+
+                <button type="button" onclick="cadastro_venda()">Cadastrar Cliente</button> <br><br><br>
+            </form>
+        </div>
+
+    </main>
+
+    <footer>
+       
+    </footer>
+</body>
+</html>

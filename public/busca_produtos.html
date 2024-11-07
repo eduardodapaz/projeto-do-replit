@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" id="buscaprodutos">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+  <title>Busca Produtos | Kolekcja</title>
+</head>
+<body>
+  <main>
+  <header>
+    <img src="imagens/logo branca.png" alt="">
+  </header>
+
+    <div class="box_buspro">
+      <h1>Consulta de Produtos</h1>
+      <div class="box_formpro">
+        <form class="buscar_produtos">
+          <label for="nomeProdutoB">Nome do Produto:</label>
+          <input type="text" id="nomeProdutoB" name="nomeProdutoB"><br><br> 
+
+          <label for="precoProdutoB">Preço do Produto:</label>
+          <input type="number" id="precoProdutoB" name="precoProdutoB"><br><br>
+
+          <label for="fabricanteB">Fabricante do Produto:</label>
+          <input type="text" id="fabricanteB" name="fabricante_do_produtoB"><br><br>
+
+          <label for="categoriaB">Categoria do Produto:</label>
+          <input type="text" id="categoriaB" name="CATEGORIAprodutoB"><br><br>
+
+          <label for="IDcodigoB">Código de barras do Produto:</label>
+          <input type="number" id="IDcodigoB" name="codprodutoB"><br><br>
+        </form>
+      </div>
+    </div>
+
+    <div class="box_tabbuspro">
+      <table id="resultadoConsulta">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Preço</th>
+                <th>Fabricante</th>
+                <th>Categoria</th>
+                <th>Código de Barras</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Resultados serão inseridos aqui -->
+        </tbody>
+      </table>
+    </div>
+    
+  </main>
+</body>
+</html>

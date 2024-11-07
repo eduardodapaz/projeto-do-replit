@@ -1,0 +1,1271 @@
+*{ /*formataçao do site*/
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0%;
+    text-decoration: none;
+}    
+
+    /*------------------------------------------GRID LOGIN------------------------------------------*/
+
+    #login header {
+        grid-area: cab;
+    }
+    #login main {
+        grid-area: pri;
+    }
+    #login footer {
+        grid-area: rod;
+    }
+
+    #login body {
+        display: grid;
+        grid-template-areas: 
+        "cab"
+        "pri"
+        "rod";
+        grid-gap: 0px;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+    }
+
+    /*------------------------------------------FIM GRID LOGIN------------------------------------------*/
+
+    /*------------------------------------------GRID HOME------------------------------------------*/
+
+    #home header {
+        grid-area: cab;
+    }
+    #home main {
+        grid-area: pri;
+    }
+    #home aside {
+        grid-area: seg;
+    }
+    #home footer {
+        grid-area: rod;
+    }
+
+    #home body {
+        display: grid;
+        grid-template-areas: 
+        "cab"
+        "pri"
+        "seg"
+        "rod";
+        grid-gap: 0px;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+    }
+
+    /*------------------------------------------FIM GRID HOME------------------------------------------*/
+
+
+#site_principal{ /*grid do site principal*/
+    display: grid;
+    grid-template-areas: 
+    'cc cc cc '
+    'nn nn nn'
+    'mm mm mm'
+    'mm mm mm'
+    'ff ff ff';
+
+
+}
+/*nomes usados no grid*/
+.cabesalho{
+    grid-area: cc;
+    background: linear-gradient(0deg, rgba(145,34,195,1) 0%, rgba(67,0,156,1) 100%);
+
+}
+
+.navegador{
+    grid-area: nn;
+
+
+}
+
+.corpo{
+    grid-area: mm;
+
+    height: 70vh;
+}
+
+.rodapé{
+   grid-area: ff;
+
+
+}
+header{
+    /* comfiguracoes do header  */
+    display: flex;
+    align-items: center;
+
+    text-align: center;
+
+}
+.icon{
+
+
+height: 30px;
+width: 30px;
+}
+.logo{
+    height: 60px;
+
+}
+/*configuracoes na barra de pesquisa*/
+.busca{
+    background: url(imagens/lupabranca.png)  no-repeat center left;
+    padding: 5px;
+    height: 30px;
+    background-size: 20px;
+    width: 30px;
+    transition: all 0.5s linear;
+    -webkit-transition:all 0.5s linear ;
+    border: none;
+
+
+
+}
+.busca:focus:-ms-input-placeholder {  
+    color: transparent;  
+ }
+.busca:focus{
+
+    background-color: white;
+   width: 500px;
+   height: 50px;
+   outline:none;
+   border-bottom: solid 1px #1b169f;
+}
+/*confguracoes do navegador*/
+.navegador ul{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    list-style: none;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+.links img{
+        height: 50px;
+        width: 50px;
+        background-color: rgb(255, 254, 252);
+        border-radius: 50%;
+        margin: 30px;
+        box-shadow: 3px 3px 3px #444444;
+
+}
+.barbie{
+    filter: grayscale(100%);
+}
+.links a{
+
+    color: black
+}
+
+.atalhos :hover{
+    filter: invert(100%);
+} 
+/*configuracoes do main */
+main img{
+    /* aqui  comfigurase as imagems dos produtos */
+    box-sizing: border-box;
+    height: 200px;
+    width: 250px;
+}
+
+main section{ 
+    display: flex;
+      justify-content: space-around; 
+  }
+
+section{ 
+  display: flex;
+    justify-content: space-around; 
+}
+/*configuracoes produto*/
+.filho{
+    display:flexbox;
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    height: 360px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 5px gray;
+    margin-top: 5%;
+    flex-wrap: wrap;
+
+}
+
+.filho div {
+    display: flex;
+    flex-direction: column;
+}
+
+.filho button{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: #fdfeff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    color: #444444;
+}login.css
+.titulo_main{
+
+
+        margin-top: 4%;
+        font-size: 200%;
+        font-weight: bolder;
+        margin-right: 200px;
+        text-align: center;
+    }
+
+
+.filho button:hover {
+    background-color: #444444;
+    color: azure;
+}
+/*-----------------------------------------*/
+/*configuracoes do cadastro produto*/
+#cp{
+    background-color: #171717;
+    font-family: 'Gabriel Serif', sans-serif;
+    color: #ffffff;
+}
+
+.postarproduto{
+    border: #2b2b2b 1px solid;
+}
+
+#cp input {
+    box-sizing: border-box;
+    padding: 15px;
+    width: 350px;
+
+    background-color: #2b2b2b;
+    border: 0;
+    border-bottom: 2px white solid;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px ;
+    color: #ffff;
+}
+#cp table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: #2b2b2b;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #cp th, td {
+    padding: 8px;
+    text-align: left;
+  }
+
+  #cp th {
+    background: linear-gradient(0deg, rgba(145,34,195,1) 0%, rgba(67,0,156,1) 100%);
+    color: #fff;
+  }
+
+#cp td {
+    color: #ffffff;
+}
+
+  #cp  tr:nth-child(even) {
+    background-color: #2b2b2b;
+  }
+
+  #cp tr:hover {
+    background-color: #3b3b3b;
+  }
+  #cp button{
+    border-radius: 15px;
+    background: linear-gradient(0deg, rgba(145,34,195,1) 0%, rgba(67,0,156,1) 100%);
+    color: #ffff;
+    margin: 15px;
+    padding: 15px;
+      }
+
+
+/*-----------------------------------------------------------------------------------PRODUTO-----------------------------------------------------------------------------------*/
+
+
+      #produto .cabesalho{
+        grid-area: cc;
+        background: rgb(145,34,195);
+        background: linear-gradient(0deg, rgba(145,34,195,1) 0%, rgba(67,0,156,1) 100%);
+
+    }
+
+    #produto .navegador{
+        grid-area: nn;
+
+
+    }
+
+    #produto .corpo{
+        grid-area: mm;
+
+        height: 70vh;
+    }
+
+    #produto .rodapé{
+       grid-area: ff;
+
+
+    }
+    #produto header{
+        display: flex;
+        align-items: center;   
+        text-align: center;
+
+    }
+    #produto .icon{
+    height: 40px;
+    width: 40px;
+    }
+
+    #produto .logo{
+        height: 80px;
+
+    }
+
+    #produto .busca{
+        background: url(imagens/lupabranca.png)  no-repeat center left;
+        padding: 5px;
+        height: 40px;
+        background-size: 20px;
+        width: 40px;
+        transition: all 0.5s linear;
+        -webkit-transition:all 0.5s linear ;
+        border: none;
+
+
+
+    }
+    #produto .busca:focus:-ms-input-placeholder {  
+        color: transparent;  
+     }
+
+    #produto .busca:focus{
+
+        background-color: white;
+       width: 500px;
+       height: 50px;
+       outline:none;
+       border-bottom: solid 1px #1b169f;
+    }
+
+    #produto *{
+        margin: 0;
+        padding: 0;
+        flex-wrap: wrap;
+        font-family: Courier New;
+        list-style: none;
+        text-decoration: none;
+    }
+
+    #produto .logo{
+        color: aliceblue;
+        min-height: 60px;
+    }
+    #produto .pequisa{
+        margin-left: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+
+    }
+
+    #produto .lupa{
+         width: 900px;
+         height: 50px;
+    }
+
+    #produto ion-icon{
+        color: rgb(0, 0, 65);
+        height: 40px;
+        width: 40px;
+        background: linear-gradient(0deg, rgb(63, 34, 195) 0%, rgb(140, 0, 255) 100%);
+
+    }
+
+    #produto main {
+        text-align: center;
+    }
+
+    #produto .elemento_pai {
+        width: fit-content;
+        margin-right: 4.5%;
+        margin-left: 4.5%;
+        margin-top: 4%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    #produto .elemento_pai2 {
+        width: fit-content;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 0.4%;
+    }
+    #produto .elemento_pai3 {
+        width: fit-content;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 4%;
+    }
+
+    #produto .card {
+        width: fit-content;
+        height: fit-content;
+    }
+    #produto .card img {
+        width: 300px;
+    }
+
+    #produto .infoladopro {
+       padding-left: 230px;
+    }
+
+    #produto .imagempro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-left: 100px;
+    }
+
+    #produto .titulopro {
+        font-weight: bold;
+        font-size: 170%;
+        margin-bottom: 3%;
+    }
+
+    #produto .precopro {
+        font-size: 250%;
+        margin-bottom: 3%;
+    }
+
+    #produto .descricaopro {
+        font-size: 135%;
+        margin-bottom: 3%;
+    }
+
+    #produto .estoque {
+        color: #ff0000;
+    }
+
+    #produto .especificacoes {
+        margin-bottom: 1%;
+    }
+
+    #produto .tituloespec {
+        font-size: 135%;
+    }
+
+    #produto .textoespec {
+        width: fit-content;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 0px;
+        margin-bottom: 4%;
+    }
+
+    #produto .listelement1 {
+        width: fit-content;
+        margin-bottom: 2%;
+    }
+    #produto .listelement2 {
+        width: fit-content;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    #produto .listelement3 {
+        width: fit-content;
+        margin-top: 2%;
+    }
+
+    #produto .elemento_pai2 button {
+        font-family: 'REM', sans-serif;
+        color: #ffffff;
+        font-size: 200%;
+        background-color: #000000;
+        border: #000000 solid;
+        border-radius: 15px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
+        cursor: pointer;
+    }
+    #produto button {
+        font-family: 'REM', sans-serif;
+        color: #ffffff;
+        font-size: 200%;
+        background-color: #191919;
+        border: #202020 solid;
+        border-radius: 15px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
+        cursor: pointer;
+    }
+
+    #produto #site_principal{
+            display: grid;
+            grid-template-areas: 
+            'cc cc cc '
+            'nn nn nn'
+            'mm mm mm'
+            'mm mm mm'
+            'ff ff ff';
+
+
+    }
+
+
+/*-----------------------------------------------------------------------------------FIM PRODUTO-----------------------------------------------------------------------------------*/
+
+
+
+
+
+
+/*-----------------------------------------------------------------------------------LOGIN-----------------------------------------------------------------------------------*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*------------------------------------------GRID------------------------------------------*/
+
+#login header {
+    grid-area: cab;
+}
+#login main {
+    grid-area: pri;
+}
+#login footer {
+    grid-area: rod;
+}
+
+#login body {
+    display: grid;
+    grid-template-areas: 
+    "cab"
+    "pri"
+    "rod";
+    grid-gap: 0px;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+}
+
+/*------------------------------------------GRID------------------------------------------*/
+
+/*-----------------------------------------HEADER-----------------------------------------*/
+
+#login header {
+    background: linear-gradient(0deg, rgba(145,34,195,1) 0%, rgba(67,0,156,1) 100%);
+    height: 120px;
+    text-align: center;
+}
+
+#login header img {
+    height: 125px;
+}
+
+/*-----------------------------------------HEADER-----------------------------------------*/
+
+/*------------------------------------------BODY------------------------------------------*/
+
+#login main {
+    background-color: #171717;
+    height: 100vh;
+    position: relative;
+}
+
+#login .bloco {
+    background-color: #2b2b2b;
+    width: fit-content;
+    padding: 30px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    border-radius: 40px;
+}
+
+#login .blocodois {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#login .blocodois h1 {
+    font-size: 60px;
+    font-weight: normal;
+    font-family: 'Gabriel Serif', sans-serif;
+    margin-bottom: 30px;
+}
+#login .blocodois a {
+    color: white;
+    text-decoration: none;
+}
+#login .blocodois .esqueceu {
+    margin-bottom: 6px;
+}
+#login .blocodois .cadastro {
+    color: blueviolet;
+}
+
+#login .blocodois button {
+    font-family: "Kay Pho Du", serif;
+    font-size: 23px;
+    padding: 15px;
+    margin: 10px;
+    margin-top: 30px;
+    border-radius: 15px;
+    border: none;
+    background-color: blueviolet;
+    color: white;
+    cursor: pointer;
+}
+
+#login .textfield {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+#login .textfield label {
+    font-family: "Kay Pho Du", serif;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+#login .textfield input {
+    box-sizing: border-box;
+    padding: 15px;
+    width: 350px;
+    border-radius: 15px;
+    border: none;
+}
+
+/*------------------------------------------BODY------------------------------------------*/
+
+/*-----------------------------------------FOOTER-----------------------------------------*/
+
+#login footer {
+    background: linear-gradient(0deg, rgba(145,34,195,1) 0%, rgba(67,0,156,1) 100%);
+    height: 170px;
+    text-align: center;
+
+    position: relative;
+}
+
+#login footer .pe {
+    color: white;
+    width: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#login footer .grande {
+    font-size: 20px;
+}
+
+#login footer a {
+    text-decoration: none;
+    color: white;
+}
+
+/*-----------------------------------------FOOTER-----------------------------------------*/
+
+
+
+
+/*-----------------------------------------------------------------------------------FIM LOGIN-----------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+/*-----------------------------------------------------------------------------------CADASTRO CLIENTE-----------------------------------------------------------------------------------*/
+
+/*------------------------------------------GRID------------------------------------------*/
+
+#cad_cliente header {
+    grid-area: cab;
+}
+#cad_cliente main {
+    grid-area: pri;
+}
+#cad_cliente footer {
+    grid-area: rod;
+}
+
+#cad_cliente body {
+    display: grid;
+    grid-template-areas: 
+    "cab"
+    "pri"
+    "rod";
+    grid-gap: 0px;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+}
+
+/*------------------------------------------GRID------------------------------------------*/
+
+
+
+
+
+/*-----------------------------------------------------------------------------------FIM CADASTRO CLIENTE-----------------------------------------------------------------------------------*/
+
+
+/*-----------------------------------------HEADER-----------------------------------------*/
+
+#login header {
+    background: linear-gradient(0deg, rgba(145,34,195,1) 0%, rgba(67,0,156,1) 100%);
+    height: 120px;
+    text-align: center;
+}
+
+#login header img {
+    height: 125px;
+}
+
+/*-----------------------------------------HEADER-----------------------------------------*/
+
+/*------------------------------------------BODY------------------------------------------*/
+
+#login main {
+    background-color: #171717;
+    height: 100vh;
+    position: relative;
+}
+
+#login .bloco {
+    background-color: #2b2b2b;
+    width: fit-content;
+    padding: 30px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    border-radius: 40px;
+}
+
+#login .blocodois {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#login .blocodois h1 {
+    font-size: 60px;
+    font-weight: normal;
+    font-family: 'Gabriel Serif', sans-serif;
+    margin-bottom: 30px;
+}
+#login .blocodois a {
+    color: white;
+    text-decoration: none;
+}
+#login .blocodois .esqueceu {
+    margin-bottom: 6px;
+}
+#login .blocodois .cadastro {
+    color: blueviolet;
+}
+
+#login .blocodois button {
+    font-family: "Kay Pho Du", serif;
+    font-size: 23px;
+    padding: 15px;
+    margin: 10px;
+    margin-top: 30px;
+    border-radius: 15px;
+    border: none;
+    background-color: blueviolet;
+    color: white;
+    cursor: pointer;
+}
+
+#login .textfield {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+#login .textfield label {
+    font-family: "Kay Pho Du", serif;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+#login .textfield input {
+    box-sizing: border-box;
+    padding: 15px;
+    width: 350px;
+    border-radius: 15px;
+    border: none;
+}
+
+/*------------------------------------------BODY------------------------------------------*/
+
+/*-----------------------------------------FOOTER-----------------------------------------*/
+
+#login footer {
+    background: linear-gradient(0deg, rgba(145,34,195,1) 0%, rgba(67,0,156,1) 100%);
+    height: 170px;
+    text-align: center;
+
+    position: relative;
+}
+
+#login footer .pe {
+    color: white;
+    width: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#login footer .grande {
+    font-size: 20px;
+}
+
+#login footer a {
+    text-decoration: none;
+    color: white;
+}
+
+/*-----------------------------------------FOOTER-----------------------------------------*/
+
+#fornecedor .oio{
+    background: linear-gradient(0deg, rgba(145,34,195,1) 0%, rgba(67,0,156,1) 100%);
+}
+
+.ic{
+    width: 187px;
+}
+
+#fornecedor .pp{
+    color: antiquewhite;
+    padding: 30px;
+}
+
+/*.oo{
+    width: 77px;
+}*/
+
+/*-------------------------TELA PRINCIPAL DO SISTEMA--------------------------------------------*/
+:root{
+    --white: #fff;
+    --dark1: #1f1f1f;
+    --dark2: #feffbc;
+    --cyan1: rgb(206, 160, 255);
+}
+
+#home *{
+    margin: 0;
+    padding: 0;
+}
+
+#home body{
+    background-color: var(--dark1);
+    background-size: 400%;
+    height: 100vh;
+}
+
+#home header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 0.1rem;
+    background: linear-gradient(0deg, rgba(145,34,195,1) 0%, rgba(67,0,156,1) 100%);
+}
+
+
+#home main{
+    display: flex;
+    flex-direction: column;
+    text-shadow:
+        5px 10px 10px #171717,
+        -5px 10px 10px #171717,
+        -5px -10px 10px #171717,
+        5px -10px 10px #171717;
+}
+#home aside{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+#home section{
+    padding: 2rem;
+}
+
+#home .first-section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    min-height: 0px;
+    flex-wrap: wrap;
+
+    margin-top: 70px;
+}
+
+#home h1{
+    font-size: 4rem;
+    letter-spacing: 8px;
+    color: var(--white);
+}
+
+#home strong{
+    color: var(--cyan1);
+}
+
+#home :is(.second-section, .fourth-section){
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+#home .second-section{
+    background-color: #feffbc;
+}
+
+#home .title{
+    color: rgb(0, 0, 0);
+}
+
+#home .second-section div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    flex-wrap: wrap;
+}
+
+#home footer{
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+#home .parte_telas {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+#home .box_telas {
+    background-color: #2b2b2b;
+    border: #1a1a1a solid 2px;
+    color: #ffffff;
+    border-radius: 15px;
+    box-shadow:
+    0px 0px 25px #1a1a1a,
+    -0px 0px 25px #1a1a1a,
+    -0px -0px 25px #1a1a1a,
+    0px -0px 25px #1a1a1a;
+
+    font-size: 40px;
+
+    height: fit-content;
+    width: fit-content;
+    padding: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#home .box_telas p {
+    width: 240px;
+    text-align: center;
+}
+
+#home .box_telas button {
+    margin-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 20px;
+
+    background-color: #ffffff;
+    font-weight: bold;
+    border-radius: 10px;
+    border: #ffffff solid 2px;
+
+    cursor: pointer;
+}
+
+/*--------------------------------------------------------fim----------------------------------------------------------------------*/
+
+
+/*-----------------------------------------------------TELA BUSCAS-----------------------------------------------------*/
+#telabusca *{
+    margin: 0;
+    padding: 0;
+}
+
+#telabusca body{
+    background-color: var(--dark1);
+    background-size: 400%;
+    height: 100vh;
+}
+
+#telabusca header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 0.1rem;
+    background: linear-gradient(0deg, rgba(145,34,195,1) 0%, rgba(67,0,156,1) 100%);
+}
+
+
+#telabusca main{
+    display: flex;
+    flex-direction: column;
+    text-shadow:
+        5px 10px 10px #171717,
+        -5px 10px 10px #171717,
+        -5px -10px 10px #171717,
+        5px -10px 10px #171717;
+}
+#telabusca aside{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+#telabusca section{
+    padding: 2rem;
+}
+
+#telabusca .first-section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    min-height: 0px;
+    flex-wrap: wrap;
+
+    margin-top: 70px;
+}
+
+#telabusca h1{
+    font-size: 4rem;
+    letter-spacing: 8px;
+    color: var(--white);
+}
+
+#telabusca strong{
+    color: var(--cyan1);
+}
+
+#telabusca :is(.second-section, .fourth-section){
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+#telabusca .second-section{
+    background-color: #feffbc;
+}
+
+#telabusca .title{
+    color: rgb(0, 0, 0);
+}
+
+#telabusca .second-section div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    flex-wrap: wrap;
+}
+
+#telabusca footer{
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+#telabusca .parte_telas {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+#telabusca .box_telas {
+    background-color: #2b2b2b;
+    border: #1a1a1a solid 2px;
+    color: #ffffff;
+    border-radius: 15px;
+    box-shadow:
+    0px 0px 25px #1a1a1a,
+    -0px 0px 25px #1a1a1a,
+    -0px -0px 25px #1a1a1a,
+    0px -0px 25px #1a1a1a;
+
+    font-size: 40px;
+
+    height: fit-content;
+    width: fit-content;
+    padding: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#telabusca .box_telas p {
+    width: 240px;
+    text-align: center;
+}
+
+#telabusca .box_telas button {
+    margin-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 20px;
+
+    background-color: #ffffff;
+    font-weight: bold;
+    border-radius: 10px;
+    border: #ffffff solid 2px;
+
+    cursor: pointer;
+}
+/*-----------------------------------------------------FIM TELA BUSCAS-----------------------------------------------------*/
+
+/*-----------------------------------------------------BUSCA PRODUTOS-----------------------------------------------------*/
+#buscaprodutos header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 0.1rem;
+    background: linear-gradient(0deg, rgba(145,34,195,1) 0%, rgba(67,0,156,1) 100%);
+}
+
+#buscaprodutos header img {
+    height: 10%;
+    width: 10%;
+}
+
+#buscaprodutos body {
+    background-color: #171717;
+    font-family: 'Gabriel Serif', sans-serif;
+    color: #ffffff;
+}
+
+#buscaprodutos .box_buspro {
+    border: #2b2b2b 1px solid;
+    border-radius: 20px;
+    padding: 20px;
+
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    width: fit-content;
+}
+
+#buscaprodutos input {
+    box-sizing: border-box;
+    padding: 15px;
+    width: 350px;
+
+    background-color: #2b2b2b;
+    border: 0;
+    border-bottom: 2px white solid;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px ;
+    color: #ffff;
+}
+
+#buscaprodutos .box_tabbuspro {
+    border: #2b2b2b 1px solid;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#buscaprodutos table {
+    border: red 1px solid;
+}
+
+#buscaprodutos th, td {
+    padding: 8px;
+}
